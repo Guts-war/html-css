@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>abra o site em diferentes dispositivos ou altere o tamanho do navegador</p>
+    <picture>
+        <source media="(max-width: 600px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max -width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <h2>Ouve essa pedrada</h2>
+    <p>Mas antes tem que aprender né</p>
+    <audio preload="metadata" controls autoplay>
+        <source src="midia/So Sweet.mp3" type="audio/mpeg">
+        <source src="midia/So Sweet.ogg" type="audio/ogg">
+        <source src="midia/So Sweet.wav" type="audio/wav">
+        <p>Seu navegador não consegue reproduzir este áudio! <a href="midia/So Sweet.mp3">Arquivo MP3</a></p>
+    </audio>
+</body>
+</html>
