@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: "Passion One", serif;
+    --font3: "Sriracha", cursive;
+}
 
  * {
     margin: 0px;
@@ -8,13 +15,20 @@
 
 html, body {
     min-height: 100vh;
+    font-family: var(--font1);
+}
+
+main {
+    margin: auto;
+    max-width: 900px;
+    border: 2px solid rgb(8, 3, 3);
+
 }
 
 header {
     background-color: rgb(34, 26, 15);
-    background-image: linear-gradient(25deg, black , rgb(59, 45, 25) 90%);
+    background-image: linear-gradient(25deg, rgb(20, 20, 20) , rgb(29, 19, 4) 90%);
     height: 150px;
-
 }
 
 header > h1 {
@@ -25,42 +39,86 @@ header > h1 {
     font-size: 45px;
     font-variant: petite-caps;
     margin: auto;
+    font-family: var(--font2);
+    font-weight: 700;
 }
 
 header > p {
-        color: white;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-
+    color: white;
+    text-align: center;
+    font-family: var(--font1)
 }
 
-header a {
+header a, footer > a {
     text-decoration: none;
     color: white;
     font-weight: bolder;
+}
 
+header a:hover, footer > a:hover {
+    text-decoration: underline;
 }
 
 section {
-    padding-top: 7vh;
-    padding-bottom: 7vh;
-    line-height: 25px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     font-family: cursive;
-    font-style: italic;
-    padding-left: 20px;
+    padding-left: 10px;
+}
+
+section p {
+    font-family: var(--font3);
+    padding: 10px;
+    line-height: 30px;
 }
 
 section.imagens {
     background-color: darkgray;
+    box-shadow: inset 0px 6px 11px rgba(0, 0, 0, 0.521);
 }
 
 section.imagens > p {
-    background-color: rgba(128, 128, 128, 0.685);
-    width: 200px;
+    background-color: rgba(253, 253, 253, 0.548);
+    width: 284px;
+    text-shadow: 0px 3px 7px rgb(255, 255, 255);
+    border-radius: 10px;
+    height: 212px;
+    font-size: 1.5em;
+}
 
+section.normal > p {
+    font-size: 1.5em;
 }
 
 section.normal {
     background-color: lightgray;
+}
+
+#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+    background-position:  left bottom;
+    background-attachment: fixed;
+}
+
+#img02 > p {
+    text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.411);
+}
+
+footer {
+    background-color: black;
+}
+
+footer > p {
+    font-family: var(--font1);
+    color: white;
+    text-align: center;
 }
 
