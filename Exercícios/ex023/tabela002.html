@@ -27,6 +27,12 @@
         .num {
             text-align: right;
         }
+
+        table > caption {
+            font-size: 25px;
+            padding: 10px;
+            text-shadow: 1px 1px 1px yellow;
+        }
     </style>
 </head>
 <body>
@@ -44,12 +50,19 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>212 583 750</strong></td>
+            </tr>
+        </tfoot>
         <tbody>
             <tr>
                 <td>São Paulo</td>
@@ -160,12 +173,7 @@
                 <td class="num">716 793</td>
             </tr>
         </tbody>
-        <tfoot>
-            <tr>
-                <th>Total de Habitantes</th>
-                <td class="num"><strong>212 583 750</strong></td>
-            </tr>
-        </tfoot>
+        
     </table>
     
 </body>
