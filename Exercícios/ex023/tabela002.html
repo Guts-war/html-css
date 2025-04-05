@@ -12,6 +12,14 @@
         table {
             width: 300px;
             border-collapse: collapse;
+            margin-bottom: 500px;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: darkgray;
         }
 
         td, th {
@@ -34,7 +42,7 @@
             text-shadow: 1px 1px 1px yellow;
         }
 
-        tbody > tr:nth-child(2n) {
+        tbody > tr:nth-child(even) {
             background-color: lightgray;
         }
     </style>
@@ -50,9 +58,27 @@
             TBODY
                 tr, td, th
             TFOOT
-                tr, td, th
+                tr, td, th]
 
 
+        Efeito zebrado na tabela
+            Para isso fazermos este efeito, vamos no css
+            usando a pseudo-classe: :nth-child(n)
+            ela seleciona todos os elementos filhos 
+            que estão dentro de seu elemento pai.
+                Pode ser em par ou tudo sequencia impar e de cada 3 elementos ela seleciona um ou dois, o que vc quizer
+                mas para o efeito zebrado é de cada 2, 1 é selecionado:
+                
+                :nth-child(2n)
+
+            Tabem podemos usar de maneiras mais semantica, por impar ou par, e os dois juntos
+
+                :nth-child(odd)         o valor (odd) é impar
+                :nth-child(even)        o valor (even) é par 
+            
+            pode usar os dois, mas em setores diferentes
+
+            E o elemento selecionado, pode colocar propriedades
 
 
         A tag scope na verdade não é uma tag, mas sim um atributo usado dentro da tag <th> (table header) em tabelas HTML. Ele define o escopo do cabeçalho da tabela, ou seja, a quais células (<td>) aquele cabeçalho se aplica.
