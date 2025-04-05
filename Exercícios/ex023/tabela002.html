@@ -20,7 +20,7 @@
         }
 
         thead, tfoot {
-            background-color: lightgray;
+            background-color: darkgray;
             
         }
 
@@ -32,6 +32,10 @@
             font-size: 25px;
             padding: 10px;
             text-shadow: 1px 1px 1px yellow;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -47,6 +51,19 @@
                 tr, td, th
             TFOOT
                 tr, td, th
+
+
+
+
+        A tag scope na verdade não é uma tag, mas sim um atributo usado dentro da tag <th> (table header) em tabelas HTML. Ele define o escopo do cabeçalho da tabela, ou seja, a quais células (<td>) aquele cabeçalho se aplica.
+
+            col – O cabeçalho se aplica a todas as células abaixo dele na mesma coluna.
+
+            row – O cabeçalho se aplica a todas as células à direita dele na mesma linha.
+
+            colgroup – O cabeçalho se aplica a um grupo de colunas.
+
+            rowgroup – O cabeçalho se aplica a um grupo de linhas.
     -->
 
     <table>
@@ -174,6 +191,36 @@
             </tr>
         </tbody>
         
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Categoria</th>
+                <th scope="col">Produto</th>
+                <th scope="col">Preço</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="2">Eletrônicos</th>
+                <td>Smartphone</td>
+                <td>R$ 2.000</td>
+            </tr>
+            <tr>
+                <td>Notebook</td>
+                <td>R$ 4.500</td>
+            </tr>
+            <tr>
+                <th scope="row" rowspan="2">Eletrodomésticos</th>
+                <td>Geladeira</td>
+                <td>R$ 3.000</td>
+            </tr>
+            <tr>
+                <td>Micro-ondas</td>
+                <td>R$ 600</td>
+            </tr>
+        </tbody>
     </table>
     
 </body>
