@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas de Filmes Favoritos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            font-size: x-large;
+            margin: 10px;
+        }
+
+        table {
+            width: 550px;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            border: 1px solid #333;
+            padding: 5px;
+        }
+
+        th {
+            background-color: darkslategrey;
+            color: aliceblue;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgb(196, 236, 255);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="colgroup">Grupo</th>
+                <th scope="col">Nome</th>
+                <th colspan="3" scope="colgroup">Filme</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <th scope="row" colspan="4">Total</th>
+            <td>10</td>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homem</th>
+                <td>Junior Madeiro</td>
+                <td>Mineraft</td>
+                <td>Guardiões Da Galaxia </td>
+                <td>Dragon Ball Super Broly</td>
+            </tr>
+            <tr>
+                <td>João Da Silva</td>
+                <td>Shin Gojira</td>
+                <td>Sonic 2</td>
+                <td>Karate Kid</td>
+            </tr>
+            <tr>
+                <td>Lucas William</td>
+                <td>As Branquelas</td>
+                <td>Ta Chovendo Hambuguer</td>
+                <td>Se Beber, Não Case</td>
+            </tr>
+
+            <tr>
+                <th scope="rowgroup" rowspan="2">Mulher</th>
+                <td>Ana Maria</td>
+                <td>Creplusculo</td>
+                <td>Safe Surch</td>
+                <td>Silencio</td>
+            </tr>
+            <tr>
+                <td>Juliana Borges</td>
+                <td>Todo Mundo Em Pânico</td>
+                <td>Nós</td>
+                <td>Luta</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -19,12 +19,24 @@
         td, th {
             border: 1px solid black;
             padding: 10px 4px;
-            background-color: aliceblue;
+        }
+
+        .gradient {
+            background-image: linear-gradient(to top, rgba(255, 0, 0, 0.514) , rgba(0, 0, 255, 0.452) 25%);
+        }
+
+        #destaque {
+            background-color: rgba(165, 42, 42, 0.514);
         }
     </style>
 </head>
 <body>
     <table>
+        <colgroup>
+            <col class="gradient">
+            <col class="gradient">
+            <col id="destaque" span="2">
+        </colgroup>
         <caption>Cadastro Mercado</caption>
         <tr>
             <th scope="col">Nome</th>
