@@ -7,7 +7,7 @@
 </head>
 <body>
     <form action="cadastros.php" method="post">
-        <label for="ijogo">Selecione Os Jogos</label>
+        <label for="ijogo">Jogos</label>
         <select name="jogo" id="ijogo" required >
 
             <optgroup label="PC">
@@ -16,11 +16,26 @@
                 <option value="cs2">Counter Strike 2</option>
                 <option value="va">Valorant</option>
             </optgroup>
-            <optgroup label="mobile">
-
+            <optgroup label="Mobile">
+                <option value="mcb">Minecraft Bedrock</option>
+                <option value="cr">Clash Royale</option>
+                <option value="so2">Standoff 2</option>
             </optgroup>
         </select>
+        
+        <label for="iprof">Profissão</label>
+        <input type="text" name="prof" id="iprof" list="listprof">
+        <datalist id="listprof">
+            <option value="Desenvolder"></option>
+            <option value="Analista De Dados"></option>
+            <option value="Administrador"></option>
+        </datalist>
 
+
+        <p>
+            <label for="imsg">Mensagem:</label>
+            <textarea name="msg" id="imsg" cols="30" rows="4" placeholder="Digite Sua Mensagem"></textarea>
+        </p>
     </form>
 </body>
 </html>
