@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="cadastros.php" method="post">
+        <label for="ijogo">Selecione Os Jogos</label>
+        <select name="jogo" id="ijogo" required >
+
+            <optgroup label="PC">
+                <option value="selecione" hidden>Selecione</option>
+                <option value="fn">Fortnite</option>
+                <option value="cs2">Counter Strike 2</option>
+                <option value="va">Valorant</option>
+            </optgroup>
+            <optgroup label="mobile">
+
+            </optgroup>
+        </select>
+
+    </form>
+</body>
+</html>
