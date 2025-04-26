@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="cadastros.php" method="post">
+
+        <p>
+            <label for="icor">Escolha Uma Cor:</label>
+            <input type="color" name="cor" id="icor" value="#bb45f3">
+        </p>
+        <p>
+            <label for="inivel">Nivel De Satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="100">
+        </p>
+        <p>
+            <label for="iarquivo">Selecione Sua Foto De Perfil</label>
+        </p>
+        <p>
+            <input type="file" name="arquivo" id="iarquivo">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

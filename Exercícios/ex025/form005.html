@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formalários</title>
+    <style>
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            
+        }
+
+        input[type="checkbox"] {
+            margin-bottom: 1em;
+        }
+
+        form {
+            background-image: linear-gradient(to top, red, orange);
+            border: 4px solid lightblue;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+       
+
+        fieldset {
+            margin: 5px;
+            border-style: outset;
+            border-color: yellow;
+            border-radius: 10px;
+        }
+
+        legend {
+            color: aqua;
+            text-shadow: 0px 0px 5px black;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="cadastros.php" method="post">
+        <fieldset>
+            <legend>Sexo</legend>
+            <p><strong>Qual Seu Genêro?</strong></p>
+            <p>
+                <input type="radio" name="sexo" id="isexf" >
+                <label for="isexm">Masculino</label>
+            </p>
+            <p>
+                <input type="radio" name="sexo" id="isexm">
+                <label for="isexm">Feminino</label>
+            </p>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Jogos Favoritos</legend>
+            
+            <input type="checkbox" name="gmgow" id="igmgow" value="oi">
+            <label for="igmgow">God Of War</label>
+            <br>
+            <input type="checkbox" name="gmso2" id="igmso2">
+            <label for="igmso2">Standoff 2</label>
+            <br>
+            <input type="checkbox" name="gmmc" id="igmmc">
+            <label for="igmmc">Minecraft</label>
+            <br>
+            <input type="checkbox" name="gmtlz" id="igmtlz">
+            <label for="igmtlz">The Legend Of Zelda</label>
+            <br>
+            <input type="checkbox" name="gmpes2017" id="igmpes2017">
+            <label for="igmpes2017">PES 2017</label>
+        </fieldset>
+
+    </form>
+</body>
+</html>
