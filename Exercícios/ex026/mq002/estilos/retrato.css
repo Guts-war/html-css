@@ -1,3 +1,12 @@
 @charset "UTF-8";
 
 /* para aparelho em, ou seja, no modo retrato(portrait) */
+
+
+body {
+    background-image: url(../img/cev-portrait.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center-bottom;
+    background-repeat: no-repeat;
+}

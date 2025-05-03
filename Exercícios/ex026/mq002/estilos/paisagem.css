@@ -1,3 +1,11 @@
 @charset "UTF-8";
 
 /* para aparelho no modo paisagem, ou seja, deitado(landscape) */
+
+body {
+    background-image: url(../img/cev-landscape.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
