@@ -8,16 +8,14 @@
 
 body {
     background-color: #c2c1c1;
-    --webkit
 }
 
-::-webkit-scrollbar {
+:-webkit-scrollbar {
     display: none;
 }
 
 header {
     background-color: #7c7b7b;
-
 }
 
 header > h1 {
@@ -41,7 +39,7 @@ header > h1 {
 }
 
 menu {
-    background-color: aqua;
+    background-color: rgb(32, 32, 32);
     display: none;
 }
 
@@ -77,4 +75,27 @@ article > p {
     text-indent: 20px;
     margin-bottom: 20px;
     line-height: 1.3em;
+}
+
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    main {
+        max-width: 600px;
+    }
+
+    #burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+        padding: 5px;
+        
+    }
+
+    menu > ul > li {
+        display: inline-block;
+        align-items: center;
+    }
 }
