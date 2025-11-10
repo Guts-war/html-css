@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        body {
+            background-color: #2e2e2e;
+        }
+
+        .container {
+            background-color: aqua;
+            display: flex;
+            height: 100px;
+            flex-flow: column wrap;
+
+            border-radius: 8px;
+        }
+
+        .item {
+            background-color: lightgreen;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto;
+            margin: 5px;
+              
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Exemplos de Blocos A</div>
+        <div class="item">Exemplos de Blocos B</div>
+        <div class="item">Exemplos de Blocos C</div>
+        <div class="item">Exemplos de Blocos D</div>
+        <div class="item">Exemplos de Blocos E</div>
+        <div class="item">Exemplos de Blocos F</div>
+        <div class="item">Exemplos de Blocos G</div>
+    </div>
+</body>
+</html>
