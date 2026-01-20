@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Centralizado</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            background-color: aqua;
+            height: 288px;
+            width: 100vw;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section {
+            height: 200px;
+            width: 200px;
+            background-color: yellowgreen;
+        }
+
+        ul {
+            background-color: burlywood;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Contato</li>
+                <li>Sobre</li>
+                <li>Home</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Conteudo</h1>
+        </section>
+    </main>
+</body>
+</html>
